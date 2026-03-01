@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NOME] | Churrascaria</title>
+    <script src="<script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { rust: '#7c2d12', smoke: '#1c1917', ember: '#f97316', cream: '#fef3c7', charcoal: '#292524' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .font-display { font-family: 'Bebas Neue', sans-serif; }
+    </style>
+</head>
+<body class="bg-charcoal text-white">
+    <!-- HEADER -->
+    <header class="bg-smoke/95 py-4 px-8 flex justify-between items-center border-b border-rust">
+        <a href="#" class="font-display text-4xl text-ember">🔥 [NOME]</a>
+        <nav class="hidden md:flex gap-6 text-sm">
+            <a href="#cardapio" class="hover:text-ember transition">Cardápio</a>
+            <a href="#reservas" class="hover:text-ember transition">Reservas</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="min-h-screen flex items-center relative">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1600&q=80" class="absolute inset-0 w-full h-full object-cover" alt="Churrasco">
+        <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent"></div>
+        <div class="relative z-10 max-w-3xl mx-auto text-center px-6">
+            <p class="text-ember tracking-[0.4em] uppercase mb-4">🍖 Assado no Carvão</p>
+            <h1 class="font-display text-7xl md:text-9xl text-white mb-2">[NOME]</h1>
+            <p class="text-xl text-gray-300 mb-10">A melhor carne da região. Maturação própria.</p>
+            <a href="#cardapio" class="inline-block bg-rust text-white px-10 py-4 font-bold hover:bg-ember transition">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <!-- MEAT MENU -->
+    <section id="cardapio" class="py-24 bg-smoke">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="font-display text-6xl text-center mb-16">Cortes Premium</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-charcoal p-8 rounded border-l-4 border-rust hover:border-ember transition">
+                    <h3 class="text-2xl font-bold mb-2">Picanha Mercosul</h3>
+                    <p class="text-gray-400 text-sm mb-4">Suculenta, no ponto certo</p>
+                    <span class="text-ember font-bold text-2xl">[P]€</span>
+                </div>
+                <div class="bg-charcoal p-8 rounded border-l-4 border-rust hover:border-ember transition">
+                    <h3 class="text-2xl font-bold mb-2">Fraldinha</h3>
+                    <p class="text-gray-400 text-sm mb-4">Macia e saborosa</p>
+                    <span class="text-ember font-bold text-2xl">[P]€</span>
+                </div>
+                <div class="bg-charcoal p-8 rounded border-l-4 border-rust hover:border-ember transition">
+                    <h3 class="text-2xl font-bold mb-2">Costela BBQ</h3>
+                    <p class="text-gray-400 text-sm mb-4">6 horas no fumo</p>
+                    <span class="text-ember font-bold text-2xl">[P]€</span>
+                </div>
+                <div class="bg-charcoal p-8 rounded border-l-4 border-rust hover:border-ember transition">
+                    <h3 class="text-2xl font-bold mb-2">Alcatra</h3>
+                    <p class="text-gray-400 text-sm mb-4">Clássicaнародная</p>
+                    <span class="text-ember font-bold text-2xl">[P]€</span>
+                </div>
+                <div class="bg-charcoal p-8 rounded border-l-4 border-rust hover:border-ember transition">
+                    <h3 class="text-2xl font-bold mb-2">Filé Mignon</h3>
+                    <p class="text-gray-400 text-sm mb-4">Super macio</p>
+                    <span class="text-ember font-bold text-2xl">[P]€</span>
+                </div>
+                <div class="bg-charcoal p-8 rounded border-l-4 border-rust hover:border-ember transition">
+                    <h3 class="text-2xl font-bold mb-2">Cupim</h3>
+                    <p class="text-gray-400 text-sm mb-4">Na brasa</p>
+                    <span class="text-ember font-bold text-2xl">[P]€</span>
+                </div>
+            </div>
+            
+            <h3 class="font-display text-4xl mt-16 mb-8">Acompanhamentos</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-charcoal p-4 rounded text-center"><span class="block text-ember font-bold">[P]€</span>Arroz</div>
+                <div class="bg-charcoal p-4 rounded text-center"><span class="block text-ember font-bold">[P]€</span>Feijão</div>
+                <div class="bg-charcoal p-4 rounded text-center"><span class="block text-ember font-bold">[P]€</span>Farofa</div>
+                <div class="bg-charcoal p-4 rounded text-center"><span class="block text-ember font-bold">[P]€</span>Batata</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVAS -->
+    <section id="reservas" class="py-24 bg-rust">
+        <div class="max-w-xl mx-auto px-6">
+            <h2 class="font-display text-5xl text-center mb-8">Reservas</h2>
+            <form class="bg-cream text-dark p-8 rounded">
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <input type="text" placeholder="Nome" class="p-3 rounded">
+                    <input type="tel" placeholder="Telefone" class="p-3 rounded">
+                </div>
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                    <input type="date" class="p-3 rounded">
+                    <select class="p-3 rounded"><option>12:00</option><option>13:00</option><option>19:00</option><option>20:00</option></select>
+                    <select class="p-3 rounded"><option>2</option><option>4</option><option>6</option></select>
+                </div>
+                <button class="w-full bg-rust text-white py-3 font-bold hover:bg-smoke transition">Reservar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-smoke py-12 text-center text-gray-500 border-t border-charcoal">
+        <p class="font-display text-2xl text-ember mb-2">[NOME]</p>
+        <p>[morada] • [telefone]</p>
+    </footer>
+</body>
+</html>
